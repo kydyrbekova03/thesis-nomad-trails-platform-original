@@ -1,2 +1,2 @@
 # thesis-nomad-trails-platform-original
-Explore the nature of K
+Explore the nature of Kyrgyzstan
