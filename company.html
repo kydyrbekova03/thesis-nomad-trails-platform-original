@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Company</title>
+        <link rel="stylesheet" type="text/css" href="/css/company.css">
+
+        <!--google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+        <!--boxing link-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--google fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet"> 
+
+        <!-- Font Awesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+
+        <style>
+            table {
+                border-collapse: collapse;
+                border-radius: 10px;
+                overflow: hidden;
+                background-color: antiquewhite;
+                margin-bottom: 50px;
+                border-style: dashed;
+                text-align: center;
+            }
+
+            th, td {
+            border: 0.5px solid rgb(227, 152, 11);
+            width: 210px;
+            height: 90px;
+            text-align: center;
+            color: black;
+            background-color: antiquewhite;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <header class="blur-line">
+            <div class="logo" alt="">
+                <div class="letter">N</div>
+                <div class="letter">O</div>
+                <div class="letter">M</div>
+                <div class="letter">A</div>
+                <div class="letter">D</div> 
+            </div>
+
+        <ul class="navbar">
+            <li><a href="nomad.html">Home</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=704290623">Contacts</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+
+        <div class="h-right">
+            <a href="#">Follow</a>
+            <a href="https://www.instagram.com/nomad.trails.platform?igsh=MTNremlvcHhuaTMyZg%3D%3D&utm_source=qr"><i class="ri-instagram-fill"></i></a>
+            <a href="https://t.me/+eHutUXgbZFIwMzhi"><i class="ri-telegram-fill"></i></a>                
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        </header>
+
+        <!--home section design-->
+        <section class="ik-pic-container" id="ik">
+            <div class="ik-pic"></div>
+        </section>
+
+        <div class="ethic-culture-image" onmouseenter="showMessage()" onmouseleave="hideMessage()" onclick="openYouTubeVideo()">
+        </div>
+
+        <section class="box-author">
+            <div class="image-author">
+                <img src="/images/photo-kani-copy.jpg" alt="">
+            </div>
+            <div class="author">
+                <h1 id="author-name">Company Owner</h1>
+                <p>"Hey there! I'm Kani, currently in my third year studying <br>Computer Science at the University of Debrecen. <br>Exploring new destinations and immersing myself in nature <br>with friends are my greatest joys. Lately, I've been fueled by the idea <br>of spreading this joy to others by showcasing the beauty of my homeland, Kyrgyzstan, and encouraging tourism there."
+                </p>
+                <a href="https://www.instagram.com/kaniiis?igsh=ZXl2OHlxbXA0NjQ2&utm_source=qr" class="button">Follow</a>
+            </div>
+        </section>
+
+        <section class="box-north-part">
+            <div class="text-north-part">
+                <h2 id="north-part">North Part</h2>
+            </div>
+        </section>
+
+        <!--Barskoon-->
+        <section class="box-barskoon">
+            <div class="image-barskoon">
+                <img src="/images/barskoon-copy.PNG" alt="">
+            </div>
+
+            
+            <div class="barskoon">
+                <h3>Barskoon Waterfall</h3>
+                <h4>Price: 17$</h4>
+                <table>
+                    <tr>
+                        <th>Season<br><span style="font-weight: 300;">Full Year</span></th>
+                        <th>Level <br><span style="font-weight: 300;">Easy</span></th>
+                    </tr>
+                    <tr>
+                        <th>Path<br><span style="font-weight: 300;">2 hours</span></th>
+                        <th>Trip Duration <br><span style="font-weight: 300;">1 day</span></th>
+                    </tr>
+                </table>c
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight">To Visit:</span>
+                        <ol>
+                            <li>Two Waterfalls: Manas Bowl, Bars Tears</li>
+                            <li>Fairy Tale Canyon</li>
+                            <li>southern shore of Issyk-Kul</li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Sunglasses</li>
+                            <li>Spare socks</li>
+                            <li>Sportswear</li>
+                            <li>Raincoat</li>
+                            <li>Suncream</li>           
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Alamedin-->
+        <section class="box-alamedin">
+            <div class="alamedin">
+                <h3>Alamedin Canyon</h3>
+                <h4>Price: 10$</h4>
+                <table class="table-2" style="background-color: antiquewhite;">
+                    <tr style="background-color:antiquewhite;">
+                        <th>Season<br><span style="font-weight: 300;">Full Year</span></th>
+                        
+                        <th width="230" height="120">Level <br><span style="font-weight: 300;">Medium</span></th>
+                    </tr>
+                    <tr align="center-text" style="background-color: antiquewhite;">
+                        <th width="230" height="120">Path<br><span style="font-weight: 300;">1.5 hours</span></th>
+                        <th width="230" height="120">Trip Duration <br><span style="font-weight: 300;">1 day</span></th>
+                    </tr>
+                </table>
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+            <div class="image-alamedin">
+                <img src="/images/alamedin.PNG" alt="">
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight">To Visit:</span>
+                        <ol>
+                            <li>Alamedin Canyon</li>
+                            <li>Burana Tower</li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Raincoat</li>
+                            <li>Suncream</li>
+                            <li>Sportswear</li>
+                            <li>Sun</li>
+                            <li>Spare socks</li>         
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Kel Suu-->
+        <section class="box-barskoon">
+            <div class="image-barskoon">
+                <img src="/images/kel-suu.PNG" alt="">
+            </div>
+
+            <div class="barskoon">
+                <h3>Kel-Suu Lake</h3>
+                <h4>Price: 80$</h4>
+                <table border="5" style="background-color: antiquewhite;">
+                    <tr align="center-text" style="background-color:antiquewhite;">
+                        <th width="230" height="120">Season<br><span style="font-weight: 300;">Summer</span></th>
+                        
+                        <th width="230" height="120">Level <br><span style="font-weight: 300;">Medium</span></th>
+                    </tr>
+                    <tr align="center-text" style="background-color: antiquewhite;">
+                        <th width="230" height="120">Path<br><span style="font-weight: 300;">2 hours</span></th>
+                        <th width="230" height="120">Trip Duration <br><span style="font-weight: 300;">2 days</span></th>
+                    </tr>
+                </table>
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight">To Visit:</span>
+                        <ol>
+                            <li>Kel-Suu Lake </li>
+                            <li>Fairy Tale Canyon</li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Sportswear</li>
+                            <li>Raincoat</li>
+                            <li>Water</li>
+                            <li>Subglasses</li>
+                            <li>Suncream</li>  
+                            <li>Spare socks</li>           
+                            <li>Swimsuit</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Kol Tor-->
+        <section class="box-alamedin">
+            <div class="alamedin">
+                <h3>Kol-Tor Lake</h3>
+                <h4>Price: 30$</h4>
+                <table class="table-2" border="5" style="background-color: antiquewhite;">
+                    <tr align="center-text" style="background-color:antiquewhite;">
+                        <th width="230" height="120">Season<br><span style="font-weight: 300;">Summer</span></th>
+                        
+                        <th width="230" height="120">Level <br><span style="font-weight: 300;">Medium</span></th>
+                    </tr>
+                    <tr align="center-text" style="background-color: antiquewhite;">
+                        <th width="230" height="120">Path<br><span style="font-weight: 300;">3-4 hours</span></th>
+                        <th width="230" height="120">Trip Duration <br><span style="font-weight: 300;">1 day</span></th>
+                    </tr>
+                </table>
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+            <div class="image-alamedin">
+                <img src="/images/kol-tor.PNG" alt="">
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight">To Visit:</span>
+                        <ol>
+                            <li>Naryn Region</li>
+                            <li>Kol-Tor Lake (2725m)</li>
+                            <li>Boating</li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Sunglasses</li>
+                            <li>Suncream</li>
+                            <li>Sportswear</li>
+                            <li>Raincoat</li>
+                            <li>Spare socks</li>           
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Ratcek Hut-->
+        <section class="box-barskoon">
+            <div class="image-barskoon">
+                <img src="/images/Ratsek-Hut.PNG" alt="">
+            </div>
+
+            
+            <div class="barskoon">
+                <h3>Ratsek Hut</h3>
+                <h4>Price: 40$</h4>
+                <table border="5" style="background-color: antiquewhite;">
+                    <tr align="center-text" style="background-color:antiquewhite;">
+                        <th width="230" height="120">Season<br><span style="font-weight: 300;">Full Year</span></th>
+                        
+                        <th width="230" height="120">Level <br><span style="font-weight: 300;">Hard</span></th>
+                    </tr>
+                    <tr align="center-text" style="background-color: antiquewhite;">
+                        <th width="230" height="120">Path<br><span style="font-weight: 300;">5 hours</span></th>
+                        <th width="230" height="120">Trip Duration <br><span style="font-weight: 300;">1 day</span></th>
+                    </tr>
+                </table>
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight">To Visit:</span>
+                        <ol>
+                            <li>Ala-Archa Natunal Park</li>
+                            <li>Ratsek Hut (3330m)</li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Sunglasses</li>
+                            <li>Spare socks</li>
+                            <li>Scarf and Gloves</li>
+                            <li>Trekking Poles</li>
+                            <li>Suncream</li>           
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--South Part-->
+        <section class="box-north-part">
+            <div class="text-north-part">
+                <h2 id="southern-part">South Part</h2>
+            </div>
+        </section>
+
+        <!--Sary-Chelek Lake-->
+        <section class="box-alamedin">
+            <div class="alamedin">
+                <h3>Sary-Chelek Lake</h3>
+                <h4>Price: 100$</h4>
+                <table class="table-2" border="5" style="background-color: antiquewhite;">
+                    <tr align="center-text" style="background-color:antiquewhite;">
+                        <th width="230" height="120">Season<br><span style="font-weight: 300;">Summer-Autumn</span></th>
+                        
+                        <th width="230" height="120">Level <br><span style="font-weight: 300;">Medium</span></th>
+                    </tr>
+                    <tr align="center-text" style="background-color: antiquewhite;">
+                        <th width="230" height="120">Path<br><span style="font-weight: 300;">3 hours</span></th>
+                        <th width="230" height="120">Trip Duration <br><span style="font-weight: 300;">3 days</span></th>
+                    </tr>
+                </table>
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+            <div class="image-alamedin">
+                <img src="/images/sary-chelek.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight">To Visit:</span>
+                        <ol>
+                            <li>Too-Ashuu Pass</li>
+                            <li>Suu-Samyr Valley</li>
+                            <li>Chyshkan Pass</li>
+                            <li>Sary-Chelek Lake</li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Raincoat</li>
+                            <li>Suncream</li>
+                            <li>Sportswear</li>
+                            <li>Suncream</li>
+                            <li>Spare socks</li>         
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Arstanbap Walnut Forest-->
+        <section class="box-barskoon">
+            <div class="image-barskoon">
+                <img src="/images/arstanbap-walnut-forest.jpg" alt="">
+            </div>
+
+            <div class="barskoon">
+                <h3>Arstanbap Walnut Forest</h3>
+                <h4>Price: 65$</h4>
+                <table border="5" style="background-color: antiquewhite;">
+                    <tr align="center-text" style="background-color:antiquewhite;">
+                        <th width="230" height="120">Season<br><span style="font-weight: 300;">Summer</span></th>
+                        
+                        <th width="230" height="120">Level <br><span style="font-weight: 300;">Easy</span></th>
+                    </tr>
+                    <tr align="center-text" style="background-color: antiquewhite;">
+                        <th width="230" height="120">Path<br><span style="font-weight: 300;">2 hours</span></th>
+                        <th width="230" height="120">Trip Duration <br><span style="font-weight: 300;">2 days</span></th>
+                    </tr>
+                </table>
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight">To Visit:</span>
+                        <ol>
+                            <li>Too-Ashuu Pass</li>
+                            <li>Chyshkan Pass</li>
+                            <li>Suu-Samyr Valley</li>
+                            <li>Arstanbap Walnut Forest</li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Sportswear</li>
+                            <li>Raincoat</li>
+                            <li>Water</li>
+                            <li>Subglasses</li>
+                            <li>Suncream</li>  
+                            <li>Spare socks</li>           
+                            <li>Swimsuit</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Alay Valley-->
+        <section class="box-alamedin">
+            <div class="alamedin">
+                <h3>Alay Valley</h3>
+                <h4>Price: 80$</h4>
+                <table class="table-2" border="5" style="background-color: antiquewhite;">
+                    <tr align="center-text" style="background-color:antiquewhite;">
+                        <th width="230" height="120">Season<br><span style="font-weight: 300;">Summer-Autumn</span></th>
+                        
+                        <th width="230" height="120">Level <br><span style="font-weight: 300;">Easy</span></th>
+                    </tr>
+                    <tr align="center-text" style="background-color: antiquewhite;">
+                        <th width="230" height="120">Path<br><span style="font-weight: 300;">1.5 hours</span></th>
+                        <th width="230" height="120">Trip Duration <br><span style="font-weight: 300;">3 days</span></th>
+                    </tr>
+                </table>
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+            <div class="image-alamedin">
+                <img src="/images/alay-valley.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight">To Visit:</span>
+                        <ol>
+                            <li>Suu-Samyr Valley</li>
+                            <li>Too-Ashuu Pass</li>
+                            <li>Chyshkan Pass</li>
+                            <li>Alay Valley</li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Raincoat</li>
+                            <li>Suncream</li>
+                            <li>Sportswear</li>
+                            <li>Suncream</li>
+                            <li>Spare socks</li>         
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Skiing-->
+        <section class="box-north-part">
+            <div class="text-north-part">
+                <h2 id="south-part">Skiing</h2>
+            </div>
+        </section>
+
+        <!--Chunkurchak Ski Base-->
+        <section class="box-alamedin">
+            <div class="alamedin">
+                <h3>Chunkurchak Ski Base</h3>
+                <h4>Price: 20$</h4>
+                <table class="table-2" border="5" style="background-color: antiquewhite;">
+                    <tr align="center-text" style="background-color:antiquewhite;">
+                        <th width="230" height="120">Number of cableways<br><span style="font-weight: 300;">4</span></th>
+                        
+                        <th width="230" height="120">Level<br><span style="font-weight: 300;">Easy</span></th>
+                    </tr>
+                    <tr align="center-text" style="background-color: antiquewhite;">
+                        <th width="230" height="120">Ski Pass<br><span style="font-weight: 300;">15$</span></th>
+                        <th width="230" height="120">Trip Duration <br><span style="font-weight: 300;">1 day</span></th>
+                    </tr>
+                </table>
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+            <div class="image-alamedin">
+                <img src="/images/chunkurchak.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Suncream</li>
+                            <li>Fleece underwear</li>
+                            <li>Spare socks</li>         
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Karakol-->
+        <section class="box-barskoon">
+            <div class="image-barskoon">
+                <img src="/images/karakol.jpg" alt="">
+            </div>
+
+            <div class="barskoon">
+                <h3>Karakol</h3>
+                <h4>Price: 200$</h4>
+                <table class="table-2" border="5" style="background-color: antiquewhite;">
+                    <tr align="center-text" style="background-color:antiquewhite;">
+                        <th width="230" height="120">Number of cableways<br><span style="font-weight: 300;">7</span></th>
+                        
+                        <th width="230" height="120">Level<br><span style="font-weight: 300;">Easy-Hard</span></th>
+                    </tr>
+                    <tr align="center-text" style="background-color: antiquewhite;">
+                        <th width="230" height="120">Ski Pass<br><span style="font-weight: 300;">17$</span></th>
+                        <th width="230" height="120">Trip Duration <br><span style="font-weight: 300;">3 days</span></th>
+                    </tr>
+                </table>
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Suncream</li>
+                            <li>Fleece underwear</li>
+                            <li>Spare socks</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Too Ashuu Ski Base-->
+        <section class="box-alamedin">
+            <div class="alamedin">
+                <h3>Too Ashuu Ski Base</h3>
+                <h4>Price: 120$</h4>
+                <table class="table-2" border="5" style="background-color: antiquewhite;">
+                    <tr align="center-text" style="background-color:antiquewhite;">
+                        <th width="230" height="120">Number of cableways<br><span style="font-weight: 300;">5</span></th>
+                        
+                        <th width="230" height="120">Level<br><span style="font-weight: 300;">Medium-Hard</span></th>
+                    </tr>
+                    <tr align="center-text" style="background-color: antiquewhite;">
+                        <th width="230" height="120">Ski Pass<br><span style="font-weight: 300;">15$</span></th>
+                        <th width="230" height="120">Trip Duration <br><span style="font-weight: 300;">2 days</span></th>
+                    </tr>
+                </table>
+                <a href="https://forms.gle/yZCT9GhyjFd3AcVV8" class="button">Book a Trip</a>
+            </div>
+            <div class="image-alamedin">
+                <img src="/images/too-ashuu-ski-base.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="scroll-button-container">
+            <div class="scroll-button" id="scroll-button-details">
+                Details
+                <span><i class="ri-arrow-down-line"></i></span>    
+            </div>
+            <div class="additional-info" id="additionalInfo" >
+                <ul>
+                    <li>
+                        <span class="highlight-n2">Equipment:</span>
+                        <ol>
+                            <li>Suncream</li>
+                            <li>Fleece underwear</li>
+                            <li>Spare socks</li>  
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--copyright-->
+        <div class="author-end">
+            <p>Copyright 2023 By Kaniet Kydyrbekova</p>
+        </div>
+
+        <!--JS Files-->
+        <script>
+            function openYouTubeVideo() {
+                window.open('https://youtu.be/hzHUJ0evZYM?si=C3BkcKbY973tIuJ_', '_blank');}
+        </script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="JScript/script.js"></script>
+
+        <!--Scroll Button-->
+        <script>
+        const scrollRevealOption = {
+            distance: "50px",
+            origin: "bottom",
+            duration: 1000,
+        };
+
+        ScrollReveal().reveal(".scroll-button-container .scroll-button", {
+        ...scrollRevealOption,
+        delay: 1000
+        })
+
+        ScrollReveal().reveal(".author h1", {
+        ...scrollRevealOption,
+        delay: 500
+        })
+
+        ScrollReveal().reveal(".barskoon h3", {
+        ...scrollRevealOption,
+        delay: 900
+        })
+
+        ScrollReveal().reveal(".barskoon h4", {
+        ...scrollRevealOption,
+        delay: 500
+        })
+
+        ScrollReveal().reveal(".alamedin h3", {
+        ...scrollRevealOption,
+        delay: 900
+        })
+
+        ScrollReveal().reveal(".alamedin h4", {
+        ...scrollRevealOption,
+        delay: 500
+        })
+        </script>
+
+        <!--Additional Info-->
+        <script>
+            const detailsButton = document.getElementById('scroll-button-details');
+            const additionalInfo = document.getElementById('additionalInfo');
+
+            detailsButton.addEventListener('click', function() {
+            if (additionalInfo.style.display === 'none') {
+                additionalInfo.style.display = 'block';
+            } else {
+                additionalInfo.style.display = 'none';
+            }
+            });
+        </script>
+    </body>
