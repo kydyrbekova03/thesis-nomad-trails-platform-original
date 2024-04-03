@@ -1,0 +1,679 @@
+*, ::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*:root{
+    --text-color: #fff;
+    --bg-color: #000;
+    --main-color: #ffa343;
+
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}*/
+
+body{
+    background-color: #edb06e;
+    overflow-x: hidden;
+    margin: 0 100px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+    background-color: black;
+}
+
+header.blur-line{
+    height: 80px;
+    background: black;
+    backdrop-filter: blur(35px);
+}
+
+.logo{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.letter {
+    width: 50px; 
+    height: 50px;
+    font-family: Arial, sans-serif; 
+    font-size: 24px;
+    font-weight: bold; 
+    color: #fffafa; 
+    text-align: center; 
+    line-height: 50px; 
+    border: 1px solid #fffafa; 
+    margin-right: 5px; 
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: #f5f5f5;
+    font-size: 1rem;
+    font-weight: 1500;
+    margin: 15px 22px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover{
+    color: #ffa343;
+}
+
+.h-right{
+    display: flex;
+    align-items: center;
+}
+
+.h-right a:first-child{
+    color: #f5f5f5;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.h-right a{
+    vertical-align: middle;
+    font-size: 20px;
+    color: #f5f5f5;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: all .50s ease;
+}
+
+.h-right a:hover{
+    color: #f5f5f5;
+    transform: translateY(-3px);
+}
+
+#menu-icon{
+    color: #f5f5f5;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10001;
+    display: block;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 250px 130px;
+
+    
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+}
+
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    margin-bottom: 30px;
+}
+
+.content .content-left .info p{
+    font-size: 25px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.content .content-left a{
+    display:inline-table;
+    padding: 10px 35px;
+    background: rgb(229, 104, 9);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    color:antiquewhite;
+    margin: 30px 1px;
+    
+}
+
+.button:hover{
+    transform: translateX(10px);
+    border: 2px solid;
+    background: transparent;
+    color: rgb(180, 173, 161);
+}
+
+.content .content-right img{
+    width: 300px;
+    height: auto;
+    position: relative;
+    animation: rotate 10s linear;
+    border-radius: 50%;
+    left: -250px;
+    top: 10px;
+    user-select: none;
+}
+
+.category{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: -100px;
+}
+
+.category .list-items h3{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin-top: 100px;
+}
+
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 120px;
+    width: 100px;
+}
+
+.category .card-list .card{
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    padding: 10px;
+    background: #f5f5f5;
+    outline: 2px solid #ffa343;
+    margin-left: 30px;
+}
+
+.category .card-list .card img{
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 15px 10px #edb06e;
+    border-radius: 50%;
+    bottom: 215px;
+    left: 50px;
+    margin-left: 70px;
+}
+
+.category .card-list .card .food-title{
+    padding: 40px 0 10px;
+}
+
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+}
+
+.category .card-list .card .desc-food{
+    text-align: center;
+}
+
+.category .list-items h4{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin-top: 40px;
+}
+
+/*Cafes*/
+.category .card-list .card-cafe{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    padding: 10px;
+    background: #f5f5f5;
+    outline: 2px solid #ffa343;
+    margin-left: 30px;
+}
+
+.category .card-list .card-cafe img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    position: absolute;
+    box-shadow: 5px 15px 10px 5px #edb06e;
+    bottom: 60px;
+    left: -20px;
+    margin-left: 70px;
+    border-radius: 5%;
+    
+}
+
+.category .card-list .card-cafe .food-title{
+    padding: 40px 0 10px;
+}
+
+.category .card-list .card-cafe .food-title h1{
+    margin: 10px 70%;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+}
+
+.category .card-list .card-cafe .desc-food{
+    margin: -4px 30px 150px 280px;
+    font-size: 15px;
+}
+
+.category .card-list .card-cafe .desc-food a{
+    color: #d97000;
+}
+
+.category .card-list .card-cafe .desc-food .button{
+    display:inline-table;
+    padding: 3px 15px;
+    background: rgb(229, 104, 9);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    color:antiquewhite;
+    margin: 20px 0 0 20px;
+}
+
+/*Card-Cafe-1*/
+.category .card-list .card-cafe-1{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    padding: 10px;
+    background: #f5f5f5;
+    outline: 2px solid #ffa343;
+    margin-left: 70px;
+}
+
+.category .card-list .card-cafe-1 img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    position: absolute;
+    box-shadow: 5px 15px 10px 5px #edb06e;
+    bottom: 60px;
+    left: -20px;
+    margin-left: 70px;
+    border-radius: 5%;
+}
+
+.category .card-list .card-cafe-1 .food-title{
+    padding: 40px 0 10px;
+}
+
+.category .card-list .card-cafe-1 .food-title h1{
+    margin: 10px 70%;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+}
+
+.category .card-list .card-cafe-1 .desc-food{
+    margin: -4px 30px 150px 280px;
+    font-size: 15px;
+}
+
+.category .card-list .card-cafe-1 .desc-food a{
+    color: #d97000;
+}
+
+.category .card-list .card-cafe-1 .desc-food .button{
+    display:inline-table;
+    padding: 3px 15px;
+    background: rgb(229, 104, 9);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    color:antiquewhite;
+    margin: 20px 0 0 20px;
+}
+
+/*Card-Cafe 2*/
+.category .card-list .card-cafe-2{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    padding: 10px;
+    background: #f5f5f5;
+    outline: 2px solid #ffa343;
+    margin-left: 70%;
+}
+
+.category .card-list .card-cafe-2 img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    position: absolute;
+    box-shadow: 5px 15px 10px 5px #edb06e;
+    bottom: 60px;
+    left: -20px;
+    margin-left: 70px;
+    border-radius: 5%;
+    
+}
+
+.category .card-list .card-cafe-2 .food-title{
+    padding: 40px 0 10px;
+}
+
+.category .card-list .card-cafe-2 .food-title h1{
+    margin: 10px 70%;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+}
+
+.category .card-list .card-cafe-2 .desc-food{
+    margin: -4px 30px 150px 280px;
+    font-size: 15px;
+}
+
+.category .card-list .card-cafe-2 .desc-food a{
+    color: #d97000;
+}
+
+.category .card-list .card-cafe-2 .desc-food .button{
+    display:inline-table;
+    padding: 3px 15px;
+    background: rgb(229, 104, 9);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    color:antiquewhite;
+    margin: 20px 0 0 20px;
+}
+
+/*Cultural Celebration*/
+h4{
+    color: #333;
+    padding-top: 15%;
+    margin: 5px 13px 25px 0;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #d97000;
+}
+
+.home-slider .swiper-slide{
+    overflow: hidden;
+    border-radius: 5rem;
+    height: 35rem;
+    width: 35rem;
+}
+
+.home-slider .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Events*/
+/* box-cuisine*/
+.box-cuisine {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuisine {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.cuisine h3{
+    color: #333;
+    padding-top: 1%;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+    margin-left: 55px;
+}
+
+.cuisine p{
+    color: #333;
+    line-height: 1.9;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+    font-style: normal;
+    font-size: 110%;
+    margin-top: 35px;
+    margin-left: 55px;
+}
+
+.image-cuisine {
+    flex: 1;
+    position: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    cursor: pointer;
+}
+
+.image-cuisine img {
+    width: 150%;
+    height: 170%;
+    max-width: 80%;
+    border-radius: 25px;
+    margin-left: 15px;
+    transition: transform 0.7s;
+}
+
+.image-cuisine img:hover{
+    transform: scale(1.2);
+}
+
+/* box-celebration*/
+.box-celebration {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.celebration {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.celebration h3{
+    color: #333;
+    padding-top: 1%;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+}
+
+.celebration p{
+    color: #333;
+    line-height: 1.9;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+    font-style: normal;
+    font-size: 110%;
+    margin-top: 65px;
+}
+
+.image-celebration {
+    flex: 1;
+    position: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    cursor: pointer;
+}
+
+.image-celebration img {
+    width: 150%;
+    height: 170%;
+    max-width: 80%;
+    border-radius: 25px;
+    margin-left: 75px;
+    transition: transform 0.7s;
+}
+
+.image-celebration img:hover{
+    transform: scale(1.2);
+}
+
+
+
+/*author*/
+.author p{
+    text-align: center;
+    padding: 20px;
+    color: #585757;
+    font-size: 20px;
+    margin: auto;
+}
+
+/*button*/
+.cuisine a{
+    display:inline-table;
+    padding: 10px 35px;
+    background: rgb(229, 104, 9);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    color:antiquewhite;
+    margin-top: 35px;
+    margin-left: 55px;
+}
+
+.celebration a{
+    display:inline-table;
+    padding: 10px 35px;
+    background: rgb(229, 104, 9);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    color:antiquewhite;
+    margin-top: 55px;
+}
+
+.button:hover{
+    transform: translateX(10px);
+    border: 2px solid;
+    background: transparent;
+    color: rgb(180, 173, 161);
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+
+    .home-slider .swiper-slide{
+        width: 27rem;
+    }
+    
+}
